@@ -78,7 +78,6 @@ const createCard =(pokedata) =>{
 }
 const printDataPokemon = async()=> {
 	const data = await getData(`https://pokeapi.co/api/v2/pokemon?limit=${pokemon_count}`);
-	console.log(data);
 	const container = document.createDocumentFragment();
 	for (const pokemon of data.results) {
 		try{
